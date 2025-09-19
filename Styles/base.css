@@ -83,3 +83,11 @@ footer {
     padding: 1rem;
     margin-top: 1rem;
 }
+
+.roboto-custom {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: "weight" 400;
+    font-style: normal;
+    font-variation-settings: "width" 100
+}
