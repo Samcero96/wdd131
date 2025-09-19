@@ -1,17 +1,9 @@
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Function to update footer details
-        function updateFooter() {
-            // Current year
-            const yearSpan = document.querySelector("#currentyear");
-            yearSpan.textContent = new Date().getFullYear();
+document.addEventListener("DOMContentLoaded", () => {
+    // Insert the current year into the <span>
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-            // Last modified date
-            const modified = document.querySelector("#lastModified");
-            modified.textContent = "Last Modification: " + document.lastModified;
-        }
+    // Insert the page's last-modified date into the second <p>
+    document.getElementById("lastModified").textContent =
+        "Last Modification: " + document.lastModified;
+});
 
-    // Call the function
-    updateFooter();
-  });
-</script>
