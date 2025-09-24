@@ -1,6 +1,11 @@
-// Footer year & last modified
-document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = document.lastModified;
+document.addEventListener("DOMContentLoaded", () => {
+
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+    document.getElementById("lastModified").textContent =
+        "Last Modification: " + document.lastModified;
+});
+
 
 // Hamburger toggle
 const hamburger = document.getElementById('hamburger');
@@ -14,4 +19,5 @@ hamburger.addEventListener('click', () => {
 document.getElementById('hamburger').addEventListener('click', () => {
     document.getElementById('main-nav').classList.toggle('show');
 });
+
 
