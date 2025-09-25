@@ -26,8 +26,10 @@
         display: none;
     }
 
-    .weather-icon-emoji {
-        display: inline;
+    .weather-card h2::after {
+        content: " ⛅";
         font-size: 1.5rem;
+        margin-left: 0.3rem;
+        color: var(--green);
     }
 }
