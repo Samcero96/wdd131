@@ -107,36 +107,3 @@ footer {
 .weather-card h2::after {
     content: "";
 }
-
-/* ---------- Larger Screens ---------- */
-@media (min-width: 768px) {
-    .hero h1 {
-        font-size: 3rem;
-    }
-
-    .content {
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 2rem;
-        padding: 2rem 3rem;
-    }
-
-    .card {
-        width: 340px;
-        transition: transform 0.2s;
-    }
-
-    .card:hover {
-        transform: translateY(-5px);
-    }
-
-    /* Pseudo-element for Weather icon on desktop */
-    .weather-card h2::after {
-        content: " ⛅";
-        /* weather icon after heading */
-        font-size: 1.4rem;
-        margin-left: 0.4rem;
-        color: var(--green);
-    }
-}
