@@ -1,6 +1,12 @@
+:root {
+    --primary: #006d77;
+    --secondary: #83c5be;
+    --dark: #2f3e46;
+    --light: #edf6f9;
+}
+
 * {
     box-sizing: border-box;
-    background: black;
 }
 
 
@@ -9,6 +15,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    background: black;
 }
 
 /* Flex navigation */
