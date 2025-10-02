@@ -1,0 +1,385 @@
+:root {
+    --green: #004d26;
+    --orange: #e67e22;
+    --white: #ffffff;
+    --font-body: 'Roboto', sans-serif;
+    --font-heading: 'Merriweather', serif;
+}
+
+body {
+    font-family: var(--font-body);
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: var(--green);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.site-logo {
+    width: 48px;
+    height: auto;
+}
+
+.site-title {
+    font-family: var(--font-heading);
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    background: var(--orange);
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 77, 38, 0.7), rgba(0, 77, 38, 0.7)),
+        url("images/lagos-hero.jpg") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Call-to-Action Button */
+.hero .cta-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: #e67e22;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-btn:hover {
+    background-color: #cf6712;
+}
+
+/* Section Layout */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: #004d26;
+    margin-bottom: 1.5rem;
+}
+
+.section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+/* Cards for Features (Foods & Culture) */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    color: #004d26;
+    margin-bottom: 0.8rem;
+}
+
+.card-content p {
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+    font-size: 1rem;
+}
+
+h2,
+h3 {
+    font-family: var(--font-heading);
+    color: var(--green);
+}
+
+.btn {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* =========================
+   Form Styles
+   ========================= */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: #004d26;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #004d26;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #e67e22;
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #e67e22;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #cf6712;
+}
+
+/* =========================
+   Recipe Page Styles
+   ========================= */
+.recipe {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recipe h2 {
+    font-family: 'Merriweather', serif;
+    color: #004d26;
+    margin-bottom: 1rem;
+}
+
+.recipe img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.recipe h3 {
+    color: #e67e22;
+    margin-top: 1.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+.recipe ul,
+.recipe ol {
+    margin-left: 1.5rem;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.recipe li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .site-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .padding {
+        padding: 1.5rem;
+    }
+}
+
+/* =========================
+   Form Styles
+   ========================= */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: #004d26;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #004d26;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #e67e22;
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #e67e22;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #cf6712;
+}
