@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Samuel Ayanleke" />
+    <meta name="description" content="A product review form for users to submit their feedback." />
     <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css" />
 </head>
@@ -16,8 +18,7 @@
         <!-- Product Name -->
         <label for="productName">Product Name:</label>
         <select id="productName" name="productName" required>
-            <option value="" disabled selected>Select a Product ...</option>
-            <!-- Options will be injected by form.js -->
+            <option value="" disabled selected>Select a Product ...</option>->
         </select>
 
         <!-- Overall Rating -->
@@ -41,7 +42,9 @@
             <label><input type="checkbox" id="feature1" name="features" value="Durability"> Durability</label>
             <label><input type="checkbox" id="feature2" name="features" value="Design"> Design</label>
             <label><input type="checkbox" id="feature3" name="features" value="Price"> Price</label>
+            <label><input type="checkbox" id="feature4" name="features" value="Ease of Use"> Ease of Use</label>
         </fieldset>
+
 
         <!-- Written Review -->
         <label for="reviewText">Written Review (optional):</label>
@@ -60,7 +63,7 @@
         <p id="lastModified"></p>
     </footer>
 
-    <script src="scripts/form.js"></script>
+    <script src="scripts/form.js" defer></script>
 </body>
 
 </html>
