@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #003366;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header .highlight {
+    color: gold;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 1rem;
+}
+
+.about,
+.place,
+.resources {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.about-content,
+.place-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about img,
+.flag {
+    max-width: 120px;
+    border-radius: 8px;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources li {
+    margin: 0.5rem 0;
+}
+
+.resources a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    background-color: steelblue;
+    border-radius: 6px;
+    padding: 0.5rem;
+}
+
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,57 @@
+/* ---------- Base Reset ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    padding: 1rem;
+    line-height: 1.4;
+}
+
+/* ---------- Confirmation Card ---------- */
+.review-container {
+    max-width: 480px;
+    margin: 2rem auto;
+    background: #e6dcef;
+    /* same lavender as form */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review-container h1 {
+    color: green;
+    /* deep purple title */
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.review-container p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Review counter emphasis */
+#reviewCount {
+    font-weight: bold;
+    color: green;
+    font-size: 1.3rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    max-width: 480px;
+    margin: 2rem auto 0;
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Ayanleke">
+    <meta name="description" content="A gallery of traditional Lagos dishes">
+    <title>Dishes – Lagos Heritage Food Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/site-plan.css">
+    <link rel="stylesheet" href="styles/site-plan-larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Lagos Heritage Logo">
+        </div>
+        <h1>Dishes</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dishes.html">Dishes</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>All Recipes</h2>
+        <form id="filterForm">
+            <label for="q">Search:</label>
+            <input id="q" name="q" placeholder="Enter dish name">
+            <button type="submit">Filter</button>
+        </form>
+        <ul id="recipe-list"></ul>
+        <p>Favorites saved: <span id="favCount">0</span></p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Samuel Ayanleke – Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/site-plan.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Ayanleke">
+    <meta name="description" content="Overview of Nigeria including data and current weather">
+    <title>Nigeria Overview</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="hero">
+        <picture>
+            <source srcset="https://www.gstatic.com/webp/gallery/5.jpg" type="image/webp">
+            <img src="images/nigeria-hero.jpg" alt="Scenic Nigeria landscape">
+        </picture>
+        <h1>Nigeria</h1>
+    </header>
+
+
+    <main class="content">
+        <section class="card data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 923,768 sq km</li>
+                <li><strong>Population:</strong> 223,800,000</li>
+                <li><strong>Capital:</strong> Abuja</li>
+                <li><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</li>
+                <li><strong>Currency:</strong> Nigerian Naira</li>
+                <li><strong>Time Zone:</strong> UTC +1</li>
+                <li><strong>Calling Code:</strong> +234</li>
+                <li><strong>Internet TLD:</strong> .ng</li>
+            </ul>
+        </section>
+
+        <section class="card weather-card">
+            <!-- Mobile SVG icon + Desktop emoji icon -->
+            <h2>
+                Weather
+                <img src="images/weather-icon.png" alt="Weather icon" class="weather-icon-svg" />
+                <span class="weather-icon-emoji" aria-hidden="true"></span>
+            </h2>
+            <p><strong>Temperature:</strong> <span id="temp">28 °C</span></p>
+            <p><strong>Conditions:</strong> <span id="cond">Sunny</span></p>
+            <p><strong>Wind:</strong> <span id="wind">10 km/h</span></p>
+            <p><strong>Humidity:</strong> <span id="humid">65 %</span></p>
+            <button id="refreshWeather">Refresh Weather</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸 Samuel Ayanleke 🌸 | Location: Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+</body>
+
+</html>

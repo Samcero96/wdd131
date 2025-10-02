@@ -1,0 +1,36 @@
+@media only screen and (min-width: 32rem) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+    }
+
+    ul#recipe-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .recipe-card {
+        margin: 0;
+    }
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    /* center the form */
+}
+
+form textarea {
+    min-height: 150px;
+}

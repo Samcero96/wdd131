@@ -1,0 +1,35 @@
+/* ===== Larger Screens ===== */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 2rem 3rem;
+    }
+
+    .card {
+        width: 350px;
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Hide SVG and show emoji on wider view */
+    .weather-icon-svg {
+        display: none;
+    }
+
+    .weather-card h2::after {
+        content: " ⛅";
+        font-size: 1.5rem;
+        margin-left: 0.3rem;
+        color: var(--green);
+    }
+}

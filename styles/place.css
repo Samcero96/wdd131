@@ -1,0 +1,109 @@
+/* =========================
+   Nigeria Info Page Styles
+   ========================= */
+
+/* ---------- Global Variables ---------- */
+:root {
+    --green: #008753;
+    /* Nigerian flag green */
+    --light-green: #00b377;
+    --white: #ffffff;
+    --text-dark: #222;
+    --card-bg: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --hero-overlay: rgba(0, 0, 0, 0.4);
+    --spacing: 1.5rem;
+}
+
+/* ---------- Base Reset ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--white);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+    background: url("../images/nigeria-hero.webp") center/cover no-repeat;
+    background-color: var(--green);
+    /* fallback color */
+    text-align: center;
+    padding: 3rem 1rem;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    color: var(--white);
+    background: var(--hero-overlay);
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+}
+
+/* ---------- Main Layout ---------- */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    padding: var(--spacing);
+}
+
+/* ---------- Cards ---------- */
+.card {
+    background: var(--card-bg);
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px var(--shadow);
+    padding: var(--spacing);
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Weather Button ---------- */
+.weather-card button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.weather-card button:hover {
+    background: var(--light-green);
+}
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--green);
+    color: var(--white);
+    margin-top: 2rem;
+}
+
+/* Hide desktop pseudo icon on mobile */
+.weather-card h2::after {
+    content: "";
+}

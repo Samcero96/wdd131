@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+    #hamburger {
+        display: none;
+        /* hide hamburger on larger screens */
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+        background: none;
+    }
+
+    nav a {
+        padding: 0;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem 2rem;
+    }
+}
